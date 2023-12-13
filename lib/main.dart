@@ -74,6 +74,24 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    Widget textInfo = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Vương Đắc Bắc 2021050104',
+        softWrap: true,
+      ),
+    );
+
+    Widget imageInfo = Center(
+      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Image.asset(
+          'images/20200711-DUY_4312.jpg',
+          width: 200.0,
+          height: 200.0,
+        ),
+      ]),
+    );
+
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
@@ -91,6 +109,8 @@ class MyApp extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            textInfo,
+            imageInfo,
           ],
         ),
       ),
